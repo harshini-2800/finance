@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#09070D] text-[#F5F0FA] antialiased selection:bg-[#8955B5] selection:text-[#F5F0FA];
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    font-family: 'Manrope', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-image: 
+      radial-gradient(at 15% 10%, rgba(99, 59, 134, 0.14) 0px, transparent 45%),
+      radial-gradient(at 85% 15%, rgba(137, 85, 181, 0.10) 0px, transparent 40%),
+      radial-gradient(at 50% 90%, rgba(57, 32, 79, 0.16) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+/* Obsidian Amethyst Card Styling with Luxurious Purple Glow */
+.amethyst-card {
+  background-color: #17101F;
+  border: 1px solid rgba(137, 85, 181, 0.18);
+  box-shadow: 0 4px 24px -2px rgba(9, 7, 13, 0.6);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.amethyst-card:hover {
+  border-color: rgba(185, 154, 217, 0.5);
+  box-shadow: 0 0 25px -2px rgba(137, 85, 181, 0.35), 0 8px 32px -4px rgba(99, 59, 134, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Universal Luxury Glow Utilities */
+.glow-purple-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-purple-hover:hover {
+  border-color: rgba(185, 154, 217, 0.5) !important;
+  box-shadow: 0 0 24px 0 rgba(137, 85, 181, 0.35) !important;
+  transform: translateY(-2px);
+}
+
+.glow-btn-hover {
+  transition: all 0.25s ease;
+}
+
+.glow-btn-hover:hover {
+  box-shadow: 0 0 20px 2px rgba(137, 85, 181, 0.5) !important;
+  border-color: rgba(211, 192, 232, 0.6) !important;
+  transform: translateY(-1px);
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09070D;
+}
+::-webkit-scrollbar-thumb {
+  background: #291C35;
+  border-radius: 9999px;
+  border: 1px solid rgba(137, 85, 181, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8955B5;
+  box-shadow: 0 0 10px rgba(137, 85, 181, 0.6);
+}
